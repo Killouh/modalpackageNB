@@ -7,16 +7,13 @@ exports["default"] = void 0;
 var _react = _interopRequireDefault(require("react"));
 var _propTypes = _interopRequireDefault(require("prop-types"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-// voir attribut/template de taille
-// voir proposition avec modal header/title, footer
-// Voir les différents usages de modale
-// voir pour ajouter classe dans la modale
 /**
  * Provide a modal package for react project
  * @param {Usestate}, from modal action : isopen = true or false
  * @returns {JSX}, render the modal if isopen = true and close it when false
  * Render modal content and behavior
  */
+
 var Modal = function Modal(_ref) {
   var isOpen = _ref.isOpen,
     onClose = _ref.onClose,

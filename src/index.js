@@ -1,14 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-
-
-// voir attribut/template de taille
-// voir proposition avec modal header/title, footer
-// Voir les différents usages de modale
-
-
-
 /**
  * Provide a modal package for react project
  * @param {Usestate}, from modal action : isopen = true or false
