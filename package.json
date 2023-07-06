@@ -1,6 +1,6 @@
 {
   "name": "@killouh/modalpackage",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "simple modal package",
   "main": "index.js",
   "scripts": {
