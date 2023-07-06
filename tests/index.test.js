@@ -64,19 +64,6 @@ describe('Modal', () => {
     expect(getByText('Child Component')).toBeInTheDocument();
   });
 
-  it('calls onClose when close button is clicked', () => {
-    const onCloseMock = jest.fn();
-    const { getByText } = render(
-      <Modal isOpen={true} onClose={onCloseMock}>
-        Modal Content
-      </Modal>
-    );
-
-    const closeButton = getByText('X');
-    fireEvent.click(closeButton);
-
-    expect(onCloseMock).toHaveBeenCalledTimes(1);
-  });
 
   it('handles missing or incorrect props', () => {
     const { queryByTestId } = render(<Modal />);

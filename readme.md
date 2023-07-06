@@ -11,8 +11,8 @@ $ yarn add @killouh/modalpackage
 Guide and examples
 
 States you need where you call code :
-
-```
+<pre>
+```javascript
   // Modal state example
 const [modalOpen, setModalOpen] = useState(false);
 
@@ -26,10 +26,12 @@ const [modalOpen, setModalOpen] = useState(false);
   };
 
 ```
+</pre>
 
 How you call it in your code :
 
-```
+<pre>
+```javascript
 import Modal from '@killouh/modalpackage';
 
 <Modal
@@ -93,9 +95,11 @@ import Modal from '@killouh/modalpackage';
         </form>
 </Modal>
 ```
+</pre>
 
 Here's a Start Css example :
-```
+<pre>
+```css
 /* Modal Part */
 .yourmodalClassName {
   position: fixed;
@@ -128,6 +132,7 @@ Here's a Start Css example :
 }
 
 ```
+</pre>
 ===
 
 Thanks
