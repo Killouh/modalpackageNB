@@ -131,6 +131,4 @@ Here's a Start Css example :
 }
 
 ```
-===
 
-Thanks

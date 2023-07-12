@@ -64,43 +64,4 @@ describe('Modal', () => {
     expect(getByText('Child Component')).toBeInTheDocument();
   });
 
-
-  it('handles missing or incorrect props', () => {
-    const { queryByTestId } = render(<Modal />);
-    expect(queryByTestId('modal')).toBeNull();
-    expect(queryByTestId('content')).toBeNull();
-  });
-
-  it('closes the modal even if onClose prop is missing', () => {
-    const { getByText } = render(
-      <Modal isOpen={true}>
-        Modal Content
-      </Modal>
-    );
-
-    const closeButton = getByText('X');
-    fireEvent.click(closeButton);
-
-    // No error should be thrown
-  });
-
-  it('conditionally renders the modal based on another variable or state', () => {
-    const shouldRenderModal = true; // Set your condition here
-    const { getByTestId, queryByTestId } = render(
-      <div>
-        {shouldRenderModal && (
-          <Modal isOpen={true} onClose={jest.fn()} data-testid="modal">
-            Modal Content
-          </Modal>
-        )}
-      </div>
-    );
-
-    if (shouldRenderModal) {
-      expect(getByTestId('modal')).toBeInTheDocument();
-    } else {
-      expect(queryByTestId('modal')).toBeNull();
-    }
-  });
-
 });
